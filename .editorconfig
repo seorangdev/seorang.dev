@@ -5,7 +5,7 @@ end_of_line = crlf
 charset = utf-8
 indent_style = space
 
-[*.{html,scss}]
+[*.{html,js,scss}]
 indent_size = 2
 
 [*.toml]
