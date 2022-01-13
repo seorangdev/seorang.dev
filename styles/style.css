@@ -1,3 +1,47 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.wrapper {
+  @apply container max-w-4xl mx-auto
+}
+
+article {
+  @apply my-12
+}
+
+article .title {
+  @apply font-bold text-4xl
+}
+
+article .date {
+  @apply my-2
+}
+
+.content {
+  @apply mt-12 space-y-4
+}
+
+.content h1 {
+  @apply font-semibold text-3xl
+}
+
+.content h2 {
+  @apply font-semibold text-2xl
+}
+
+.content a {
+  @apply text-blue-500
+}
+
+.navbar {
+  @apply py-2
+}
+
+.navbar ul {
+  @apply space-x-4
+}
+
+.navbar .link {
+  @apply inline-block
+}
