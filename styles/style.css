@@ -2,24 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-.wrapper {
-  @apply container max-w-4xl mx-auto
-}
-
 article {
   @apply my-12
-}
-
-article .title {
-  @apply font-bold text-4xl
 }
 
 article .date {
   @apply my-2
 }
 
+article .title {
+  @apply font-bold text-4xl
+}
+
 .content {
   @apply mt-12 space-y-4
+}
+
+.content a {
+  @apply text-blue-500
 }
 
 .content h1 {
@@ -30,18 +30,34 @@ article .date {
   @apply font-semibold text-2xl
 }
 
-.content a {
-  @apply text-blue-500
+.content pre {
+  @apply whitespace-pre-wrap
 }
 
 .navbar {
   @apply py-2
 }
 
+.navbar .link {
+  @apply inline-block
+}
+
 .navbar ul {
   @apply space-x-4
 }
 
-.navbar .link {
-  @apply inline-block
+ol, ul {
+  @apply list-inside
+}
+
+ol {
+  @apply list-decimal 
+}
+
+ul {
+  @apply list-disc
+}
+
+.wrapper {
+  @apply container max-w-3xl mx-auto
 }
