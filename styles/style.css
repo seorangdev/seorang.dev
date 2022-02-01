@@ -2,66 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-article {
-  @apply my-12
+a {
+  @apply text-blue-800 no-underline hover:underline
 }
 
-article .date {
-  @apply my-2
-}
-
-article .title {
-  @apply font-bold text-4xl
-}
-
-.content {
-  @apply mt-12 space-y-4
-}
-
-.content a {
-  @apply text-blue-500
-}
-
-.content h1 {
-  @apply font-semibold text-3xl
-}
-
-.content h2 {
-  @apply font-semibold text-2xl
-}
-
-.content pre {
-  @apply whitespace-pre-wrap
-}
-
-.navbar {
-  @apply flex py-2 
-}
-
-.navbar .navbar-brand {
-  @apply font-semibold
-}
-
-.navbar .link {
-  @apply inline-block
-}
-
-.navbar ul {
+.nav-links {
   @apply space-x-4
 }
 
-ol, ul {
-  @apply list-inside
+.nav-links li {
+  @apply inline-block
 }
 
-ol {
-  @apply list-decimal 
-}
-
-ul {
-  @apply list-disc
-}
-
-.wrapper {
-  @apply container max-w-3xl mx-auto
+.nav-links a {
+  @apply text-gray-900
 }
