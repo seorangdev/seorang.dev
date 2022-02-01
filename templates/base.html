@@ -7,20 +7,23 @@
   <link rel="stylesheet" href="/style.css">
   <title>{% block title %}{{ config.title }}{% endblock title %}</title>
 </head>
-<body class="text-base text-gray-800 leading-relaxed font-sans">
-  <div class="container max-w-3xl mx-auto">
+<body>
+  <div class="wrapper">
     <header>
-      <nav class="flex py-2">
-        <a href="/" class="text-gray-900 font-semibold">{{ config.title }}</a>
-        <div class="flex-auto"></div>
+      <nav class="flex py-4">
+        <a href="/" class="nav-author">
+          <img src="https://avatars.githubusercontent.com/u/24291960?v=4" />
+          <span>{{ config.title }}</span>
+        </a>
+        <span class="flex-auto"></span>
         <ul class="nav-links">
           <li><a href="/">Home</a></li>
           <li><a href="/about">About</a></li>
-          <li><a href="/writing">Writing</a></li>
+          <li><a href="/logs">Logs</a></li>
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="mb-8">
       {% block content %} {% endblock %}
     </main>
   </div>

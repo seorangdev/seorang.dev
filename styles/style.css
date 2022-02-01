@@ -6,6 +6,58 @@ a {
   @apply text-blue-800 no-underline hover:underline
 }
 
+body {
+  @apply text-base text-gray-800 leading-loose font-sans
+}
+
+h1 {
+  @apply text-3xl
+}
+
+h2 {
+  @apply text-2xl
+}
+
+h3, h4 {
+  @apply text-xl
+}
+
+h5, h6 {
+  @apply text-lg
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply leading-loose
+}
+
+li > ul {
+  @apply ml-4
+}
+
+ol {
+  @apply list-inside list-decimal 
+}
+
+.md-meta {
+  @apply py-12 text-center
+}
+
+.md-content h2 {
+  @apply first:mt-0 mt-8 font-semibold
+}
+
+.nav-author {
+  @apply flex items-center text-gray-900 hover:no-underline
+}
+
+.nav-author img {
+  @apply w-8 h-8 rounded-full
+}
+
+.nav-author span {
+  @apply ml-2 font-semibold
+}
+
 .nav-links {
   @apply space-x-4
 }
@@ -16,4 +68,16 @@ a {
 
 .nav-links a {
   @apply text-gray-900
+}
+
+ul {
+  @apply list-inside list-disc
+}
+
+pre {
+  @apply whitespace-pre-wrap
+}
+
+.wrapper {
+  @apply container max-w-3xl mx-auto px-6 lg:px-0
 }
