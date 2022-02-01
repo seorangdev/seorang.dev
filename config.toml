@@ -1,3 +1,6 @@
+title = "Hizzely"
+description = "Description"
+
 # The URL the site will be built for
 base_url = "https://seorang.dev"
 

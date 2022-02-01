@@ -35,7 +35,11 @@ article .title {
 }
 
 .navbar {
-  @apply py-2
+  @apply flex py-2 
+}
+
+.navbar .navbar-brand {
+  @apply font-semibold
 }
 
 .navbar .link {
