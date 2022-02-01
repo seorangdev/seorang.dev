@@ -4,13 +4,12 @@ date = 2022-01-13
 draft = false
 +++
 
-# Why?
+## Why?
 Tailwind CSS by default is huge. To use it in production, we need to do some optimization like removing unused code.
 In order to do that, Tailwind uses PostCSS, and PostCSS runs on Node.js.
 Setting up another tool just to use one package feels like adding unnecessary complexity, especially for simple project like this site.
-# How?
-Thankfully, the team at Tailwind recently [released](https://tailwindcss.com/blog/standalone-cli) their standalone `tailwindcss` CLI tool. By using the standalone tool, we're now able to use Tailwind CSS within non-JavaScript project without Node.js.
-## Adding Tailwind CSS Into Zola SSG Project
+## How?
+Thankfully, the team at Tailwind CSS recently [released](https://tailwindcss.com/blog/standalone-cli) their standalone `tailwindcss` CLI tool. By using the standalone tool, we're now able to use Tailwind CSS within non-JavaScript project without Node.js.
 1. Download the latest build of `tailwindcss` CLI tool [here](https://github.com/tailwindlabs/tailwindcss/releases/latest)
 2. Use the tool as usual, for my use case it's enough for me to just generate the `tailwind.config.js` file. So let's do it:
 ```
@@ -53,5 +52,5 @@ $ tailwindcss --watch --input ./styles/style.css --output ./static/style.css
 ```
 $ tailwindcss --minify --input ./styles/style.css --output ./static/style.css
 ``` 
-# Conclusion
+## Conclusion
 That's it! for simple use case like mine, this standalone tool perfectly fits my use case. How about yours? Thanks for reading!
