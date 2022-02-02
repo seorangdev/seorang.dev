@@ -9,12 +9,12 @@ Continuing our goal where we wanted this site to be as "vanilla" as possible. Si
 ## How
 On Cloudflare Pages, we can customize the build command and we're allowed to run custom shell script there. So to achieve this, we're going to write a simple shell script that will help us automate the build process. Here is what we need to do:
 1. Download the `tailwindcss` standalone CLI app, save it as "tailwindcss", then make it executable.
-```
+```sh
 wget -cO - https://github.com/tailwindlabs/tailwindcss/releases/download/v3.0.13/tailwindcss-linux-x64 > tailwindcss \
     && chmod +x ./tailwindcss
 ```
 2. Run the usual build command with the addition of `--minify` argument to make the resulting CSS smaller.
-```
+```sh
 ./tailwindcss -i ./styles/style.css -o ./static/style.css --minify
 ```
 3. Commit the script and let's deploy it on Cloudflare Pages using **None** as the framework preset.
@@ -24,7 +24,7 @@ wget -cO - https://github.com/tailwindlabs/tailwindcss/releases/download/v3.0.13
     - Finally build the site using `zola build` command
 
 So the final command would look like this:
-```
+```sh
 chmod +x build.sh && sh build.sh && zola build
 ```
 5. Don't forget that according to the [guide](https://developers.cloudflare.com/pages/framework-guides/deploy-a-zola-site#deploying-with-cloudflare-pages), we need to supply `ZOLA_VERSION` and tell what version of Zola we want to use on **Environment Variables** section.

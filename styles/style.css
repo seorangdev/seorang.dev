@@ -30,6 +30,10 @@ h1, h2, h3, h4, h5, h6 {
   @apply leading-loose
 }
 
+li > code {
+  @apply bg-gray-200 px-2 rounded-lg
+}
+
 li > ul {
   @apply ml-4
 }
@@ -44,6 +48,10 @@ ol {
 
 .md-content h2 {
   @apply first:mt-0 mt-8 font-semibold
+}
+
+.md-content pre {
+  @apply rounded-lg
 }
 
 .nav-author {
@@ -74,8 +82,12 @@ ul {
   @apply list-inside list-disc
 }
 
+p > code {
+  @apply bg-gray-200 px-2 rounded-lg
+}
+
 pre {
-  @apply whitespace-pre-wrap
+  @apply overflow-auto py-2 px-4
 }
 
 .wrapper {
