@@ -2,6 +2,13 @@
 
 {% block title %}{{ page.title }} - {{ config.title }}{% endblock title %}
 
+{% block mt_title %}{{ page.title }} - {{ config.title }}{% endblock mt_title %}
+{% block mt_desc %}{{ page.description }}{% endblock mt_desc %}
+
+{% block og_url %}{{ page.permalink | safe }}{% endblock og_url %}
+{% block og_title %}{{ page.title }} - {{ config.title }}{% endblock og_title %}
+{% block og_desc %}{{ page.description }}{% endblock og_desc %}
+
 {% block content %}
 <section class="md-content">
   {{ page.content | safe }}

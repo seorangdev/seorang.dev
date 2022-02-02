@@ -1,6 +1,13 @@
 {% extends "base.html" %}
 
-{% block title %}Logs - {{ config.title }}{% endblock title %}
+{% block title %}{{ section.title }} - {{ config.title }}{% endblock title %}
+
+{% block mt_title %}{{ section.title }} - {{ config.title }}{% endblock mt_title %}
+{% block mt_desc %}{{ section.description }}{% endblock mt_desc %}
+
+{% block og_url %}{{ section.permalink | safe }}{% endblock og_url %}
+{% block og_title %}{{ section.title }} - {{ config.title }}{% endblock og_title %}
+{% block og_desc %}{{ section.description }}{% endblock og_desc %}
 
 {% block content %}
 <ul>

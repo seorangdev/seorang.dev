@@ -1,5 +1,6 @@
 +++
 title = "Adding Tailwind CSS Into Zola Site Without Node.js"
+description = "Because setting up new build system just to use one package is like adding unnecessary complexity"
 date = 2022-01-13
 draft = false
 +++

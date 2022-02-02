@@ -5,7 +5,7 @@
 base_url = "https://seorang.dev"
 
 title = "Hizzely"
-description = "Description"
+description = "A personal site by hizzely"
 
 [markdown]
 highlight_code = true

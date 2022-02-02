@@ -1,5 +1,6 @@
 +++
 title = "Building Tailwind CSS Without Node.js On Cloudflare Pages"
+description = "Tailwind CSS standalone CLI isn't available by default in Cloudflare Pages. So how do we build it?"
 date = 2022-01-14
 draft = false
 +++

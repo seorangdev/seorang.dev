@@ -1,5 +1,6 @@
 +++
 title = "About"
+description = "About this personal site"
 draft = false
 template = "page.html"
 +++

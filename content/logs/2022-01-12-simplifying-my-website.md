@@ -1,5 +1,6 @@
 +++
 title = "Simplifying My Website By Going JavaScript-less"
+description = "Sometimes even the most lightweight JavaScript framework still feels bloated for us. So why don't we ditch it altogether?"
 date = 2022-01-12
 draft = false
 +++
