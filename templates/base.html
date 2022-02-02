@@ -4,15 +4,24 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/style.css">
+  <meta name="title" content="{% block mt_title %}{{ config.title }}{% endblock mt_title %}">
+  <meta name="description" content="{% block mt_desc %}{{ config.description }}{% endblock mt_desc %}">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{% block og_url %}{{ config.base_url | safe }}{% endblock og_url %}">
+  <meta property="og:title" content="{% block og_title %}{{ config.title }}{% endblock og_title %}">
+  <meta property="og:description" content="{% block og_desc %}{{ config.description }}{% endblock og_desc %}">
+
   <title>{% block title %}{{ config.title }}{% endblock title %}</title>
+  <link rel="icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/style.css">
 </head>
 <body>
   <div class="wrapper">
     <header>
       <nav class="flex py-4">
         <a href="/" class="nav-author">
-          <img src="https://avatars.githubusercontent.com/u/24291960?v=4" />
+          <img alt="Author Image" src="/author.webp" />
           <span>{{ config.title }}</span>
         </a>
         <span class="flex-auto"></span>
