@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,6 +14,7 @@
   <title>{% block title %}{{ config.title }}{% endblock title %}</title>
   <link rel="icon" href="/favicon.ico">
   <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/fonts/karla.css">
 </head>
 <body>
   <div class="wrapper">
@@ -31,7 +32,7 @@
         </ul>
       </nav>
     </header>
-    <main class="mb-8">
+    <main class="mt-2 mb-8">
       {% block content %} {% endblock %}
     </main>
   </div>

@@ -7,9 +7,12 @@ base_url = "https://seorang.dev"
 title = "Hizzely"
 description = "A personal site by hizzely"
 
+generate_feed = true
+feed_filename = "atom.xml"
+
 [markdown]
 highlight_code = true
-highlight_theme = "base16-ocean-light"
+highlight_theme = "zenburn"
 external_links_target_blank = true
 external_links_no_follow = true
 external_links_no_referrer = true

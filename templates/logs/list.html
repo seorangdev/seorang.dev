@@ -10,9 +10,20 @@
 {% block og_desc %}{{ section.description }}{% endblock og_desc %}
 
 {% block content %}
-<ul>
-  {% for page in section.pages %}
-    <li><a href="{{ page.permalink | safe }}">{{ page.title }}</a></li>
-  {% endfor %}
-</ul>
+<div class="space-y-6">
+{% for page in paginator.pages %}
+  <div class="p-6 bg-dark-base-400 rounded-md">
+    <a href="{{ page.permalink | safe }}" class="text-xl">{{ page.title }}</a>
+    <p class="text-dark-secondary">{{ page.description | safe }}</p>
+  </div>
+{% endfor %}
+</div>
+<nav class="text-center">
+  {% if paginator.previous %}
+    <a class="previous" href="{{ paginator.previous }}">‹ Previous</a>
+  {% endif %}
+  {% if paginator.next %}
+    <a class="next" href="{{ paginator.next }}">Next ›</a>
+  {% endif %}
+</nav>
 {% endblock content %}

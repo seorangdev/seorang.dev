@@ -3,93 +3,96 @@
 @tailwind utilities;
 
 a {
-  @apply text-blue-800 no-underline hover:underline
+  @apply text-blue-800 dark:text-dark-primary no-underline hover:underline decoration-wavy;
 }
 
 body {
-  @apply text-base text-gray-800 leading-loose font-sans
+  @apply text-base text-gray-800 dark:text-dark-secondary leading-loose font-sans bg-slate-50 dark:bg-dark-base-600;
 }
 
 h1 {
-  @apply text-3xl
+  @apply text-3xl;
 }
 
 h2 {
-  @apply text-2xl
+  @apply text-2xl;
 }
 
-h3, h4 {
-  @apply text-xl
+h3,
+h4 {
+  @apply text-xl;
 }
 
-h5, h6 {
-  @apply text-lg
+h5,
+h6 {
+  @apply text-lg;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  @apply leading-loose
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply leading-relaxed;
 }
 
 li > code {
-  @apply bg-gray-200 px-2 rounded-lg
+  @apply bg-dark-base-200 text-dark-primary px-1 rounded;
 }
 
 li > ul {
-  @apply ml-4
+  @apply ml-4;
 }
 
 ol {
-  @apply list-inside list-decimal 
+  @apply list-inside list-decimal;
 }
 
 .md-meta {
-  @apply py-12 text-center
+  @apply py-12 text-center;
 }
 
 .md-content h2 {
-  @apply first:mt-0 mt-8 font-semibold
+  @apply first:mt-0 mt-8 font-semibold;
 }
 
 .md-content pre {
-  @apply rounded-lg
+  @apply rounded-lg my-4;
 }
 
 .nav-author {
-  @apply flex items-center text-gray-900 hover:no-underline
+  @apply flex items-center text-gray-900 dark:text-gray-200 hover:no-underline;
 }
 
 .nav-author img {
-  @apply w-8 h-8 rounded-full
+  @apply w-8 h-8 rounded-full;
 }
 
 .nav-author span {
-  @apply ml-2 font-semibold
+  @apply ml-2 font-semibold;
 }
 
 .nav-links {
-  @apply space-x-4
+  @apply space-x-4;
 }
 
 .nav-links li {
-  @apply inline-block
-}
-
-.nav-links a {
-  @apply text-gray-900
+  @apply inline-block;
 }
 
 ul {
-  @apply list-inside list-disc
+  @apply list-inside list-disc;
 }
 
 p > code {
-  @apply bg-gray-200 px-2 rounded-lg
+  @apply bg-dark-base-200 text-dark-primary px-1 rounded;
 }
 
 pre {
-  @apply overflow-auto py-2 px-4
+  @apply overflow-auto py-2 px-4;
 }
 
 .wrapper {
-  @apply container max-w-3xl mx-auto px-6 lg:px-0
+  @apply container max-w-2xl mx-auto px-6 lg:px-0;
 }
