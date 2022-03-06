@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,24 +17,20 @@
   <link rel="stylesheet" href="/fonts/karla.css">
 </head>
 <body>
-  <div class="wrapper">
-    <header>
-      <nav class="flex py-4">
-        <a href="/" class="nav-author">
-          <img alt="Author Image" src="/author.webp" />
-          <span>{{ config.title }}</span>
-        </a>
-        <span class="flex-auto"></span>
-        <ul class="nav-links">
-          <li><a href="/">Home</a></li>
-          <li><a href="/about/">About</a></li>
-          <li><a href="/logs/">Logs</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main class="mt-2 mb-8">
-      {% block content %} {% endblock %}
-    </main>
-  </div>
+  <header class="bg-sun-400">
+    <nav class="wrapper flex py-4">
+      <a href="/" class="nav-author">
+        <img alt="Author Image" title="Hi, I'm Hizzely 👋" src="/author.webp" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/logs/">Logs</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="wrapper">
+    {% block content %} {% endblock %}
+  </main>
 </body>
 </html>

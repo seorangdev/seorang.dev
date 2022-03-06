@@ -3,11 +3,19 @@
 @tailwind utilities;
 
 a {
-  @apply text-blue-800 dark:text-dark-primary no-underline hover:underline decoration-wavy;
+  @apply text-sun-500 dark:text-dark-primary no-underline hover:underline decoration-wavy;
 }
 
 body {
-  @apply text-base text-gray-800 dark:text-dark-secondary leading-loose font-sans bg-slate-50 dark:bg-dark-base-600;
+  @apply bg-sun-200 dark:bg-dark-base-600 text-base text-sun-900 dark:text-dark-secondary leading-loose font-sans;
+}
+
+.card {
+  @apply bg-sun-100 dark:bg-dark-base-400 p-6 rounded-md border border-sun-600 dark:border-dark-base-800;
+}
+
+.card .subtitle {
+  @apply text-sun-800;
 }
 
 h1 {
@@ -34,11 +42,11 @@ h3,
 h4,
 h5,
 h6 {
-  @apply leading-relaxed;
+  @apply leading-relaxed text-sun-800;
 }
 
 li > code {
-  @apply bg-dark-base-200 text-dark-primary px-1 rounded;
+  @apply bg-sun-300 text-sun-900 dark:bg-dark-base-200 dark:text-dark-primary px-1 rounded;
 }
 
 li > ul {
@@ -62,7 +70,7 @@ ol {
 }
 
 .nav-author {
-  @apply flex items-center text-gray-900 dark:text-gray-200 hover:no-underline;
+  @apply flex items-center text-sun-800 dark:text-gray-200 hover:no-underline;
 }
 
 .nav-author img {
@@ -74,11 +82,15 @@ ol {
 }
 
 .nav-links {
-  @apply space-x-4;
+  @apply ml-4 space-x-4;
 }
 
 .nav-links li {
   @apply inline-block;
+}
+
+.nav-links li a {
+  @apply font-semibold text-sun-800;
 }
 
 ul {
@@ -86,7 +98,7 @@ ul {
 }
 
 p > code {
-  @apply bg-dark-base-200 text-dark-primary px-1 rounded;
+  @apply bg-sun-300 text-sun-900 dark:bg-dark-base-200 dark:text-dark-primary px-1 rounded;
 }
 
 pre {
