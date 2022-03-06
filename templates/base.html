@@ -16,20 +16,20 @@
   <link rel="stylesheet" href="/style.css">
   <link rel="stylesheet" href="/fonts/karla.css">
 </head>
-<body>
-  <header class="bg-sun-400">
-    <nav class="wrapper flex py-4">
+<body class="wrapper" id="top">
+  <header class="inner-wrapper">
+    <nav class="flex">
       <a href="/" class="nav-author">
         <img alt="Author Image" title="Hi, I'm Hizzely 👋" src="/author.webp" />
       </a>
+      <div class="mx-auto"></div>
       <ul class="nav-links">
-        <li><a href="/">Home</a></li>
         <li><a href="/about/">About</a></li>
         <li><a href="/logs/">Logs</a></li>
       </ul>
     </nav>
   </header>
-  <main class="wrapper">
+  <main>
     {% block content %} {% endblock %}
   </main>
 </body>

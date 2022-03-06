@@ -10,10 +10,18 @@
 {% block og_desc %}{{ page.description }}{% endblock og_desc %}
 
 {% block content %}
-<article>
-  <div class="md-meta">
+<article id="{{ page.slug }}">
+  <div class="md-meta inner-wrapper">
+    <p>{{ page.reading_time }} minute(s) to read</p>
     <h1>{{ page.title }}</h1>
   </div>
-  <div class="md-content">{{ page.content | safe }}</div>
+  
+  <div class="card md-content">{{ page.content | safe }}</div>
+  <div class="sticky bottom-0 text-center z-50">
+    <div class="subnav-gradient"></div>
+    <div class="subnav-content">
+      <a href="#top">&#8679; Back to top</a>
+    </div>
+  </div>
 </article>
 {% endblock content %}

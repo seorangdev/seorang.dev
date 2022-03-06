@@ -10,24 +10,26 @@
 {% block og_desc %}{{ section.description }}{% endblock og_desc %}
 
 {% block content %}
-{% for year, pages in paginator.pages | group_by(attribute="year") %}
-  <h2>{{ year }} </h2>
-  <div class="space-y-4">
-    {% for page in pages %}
-      <div>
-        <a href="{{ page.permalink | safe }}" class="text-lg">{{ page.title }}</a>
-        <p class="text-sun-800">{{ page.description | safe }}</p>
-      </div>
-    {% endfor %}
-  </div>
-{% endfor %}
+<div class="inner-wrapper">
+  {% for year, pages in paginator.pages | group_by(attribute="year") %}
+    <div class="space-y-8 mb-8">
+      <h2 class="text-center">{{ year }} </h2>
+      {% for page in pages %}
+        <div id="{{ page.slug }}" class="card">
+          <a href="{{ page.permalink | safe }}" class="text-lg">{{ page.title }}</a>
+          <p class="text-sun-800">{{ page.description | safe }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  {% endfor %}
 
-<nav class="text-center">
-  {% if paginator.previous %}
-    <a class="previous" href="{{ paginator.previous }}">‹ Newer</a>
-  {% endif %}
-  {% if paginator.next %}
-    <a class="next" href="{{ paginator.next }}">Older ›</a>
-  {% endif %}
-</nav>
+  <nav class="text-center">
+    {% if paginator.previous %}
+      <a class="previous" href="{{ paginator.previous }}">‹ Newer</a>
+    {% endif %}
+    {% if paginator.next %}
+      <a class="next" href="{{ paginator.next }}">Older ›</a>
+    {% endif %}
+  </nav>
+</div>
 {% endblock content %}
