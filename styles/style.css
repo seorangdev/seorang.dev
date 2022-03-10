@@ -94,7 +94,7 @@ h6 {
 }
 
 .nav-links {
-  @apply ml-4 space-x-4;
+  @apply space-x-4;
 }
 
 .nav-links li {
