@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="/fonts/karla.css">
 </head>
 <body class="wrapper" id="top">
+  {% block header %}
   <header class="inner-wrapper">
     <nav class="flex">
       <a href="/" class="nav-author">
@@ -29,6 +30,7 @@
       </ul>
     </nav>
   </header>
+  {% endblock header %}
   <main>
     {% block content %} {% endblock %}
   </main>
