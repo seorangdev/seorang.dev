@@ -1,5 +1,25 @@
 {% extends "base.html" %}
 
+{% block header %}
+{% endblock %}
+
 {% block content %}
-<h2>Hello World!</h2>
+<div class="flex flex-col items-center justify-center h-screen px-8">
+  <section class="text-center">
+    <div class="group relative inline-block">
+      <img alt="Author Image" src="/author.webp" class="inline-block rounded-full border-2 border-sun-600 w-auto" />
+      <span class="absolute text-4xl bottom-0 left-0 transition opacity-0 group-hover:opacity-100">✌🏼</span>
+    </div>
+    <div class="mt-2 leading-snug">
+      <h1>Hi! I'm Hizzely</h1>
+      <p>I explore and create something in various forms.</p>
+    </div>
+  </section>
+  <nav class="mt-8">
+    <ul class="nav-links">
+      <li><a href="/about/">/about</a></li>
+      <li><a href="/logs/">/logs</a></li>
+    </ul>
+  </nav>
+</div>
 {% endblock content %}
