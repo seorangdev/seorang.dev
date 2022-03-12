@@ -1,18 +1,18 @@
 +++
-title = "Back to Basic: Building A Countdown in React Using Hooks"
-description = "I really cannot wrap my head at first. But turns out it quite simple!"
+title = "React Custom Hook: Countdown"
+description = "Using React's Effect Hook to build a countdown"
 date = 2022-02-11
 draft = false
 +++
 
-I want to build a countdown with this specification:
+## Use Case
 
 - User can set the duration in second.
 - User can set a callback function that receives the current countdown in second on each tick.
 - User can change the duration while the countdown is running and will immediately use the latest duration on the next tick.
 - User can also change the duration while the countdown was finished, doing so will restart the countdown using the latest duration.
 
-This is the final custom hook code in TypeScript:
+## Code (TypeScript)
 
 ```ts
 import { useEffect, useRef } from "react";
@@ -44,6 +44,10 @@ function useCountdown(
 export { useCountdown };
 ```
 
-## Explanation
+## Tested On
 
-TODO
+- React >= 17
+
+## Inspired From
+
+- [Making setInterval Declarative with React Hooks](https://overreacted.io/making-setinterval-declarative-with-react-hooks/) by Overreacted
