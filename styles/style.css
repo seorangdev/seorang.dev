@@ -7,11 +7,11 @@
 }
 
 a {
-  @apply text-sun-500 dark:text-dark-primary no-underline hover:underline decoration-wavy;
+  @apply text-sun-500 no-underline hover:underline decoration-wavy;
 }
 
 body {
-  @apply bg-sun-400 dark:bg-dark-base-600 text-base text-sun-900 dark:text-dark-secondary leading-loose font-sans;
+  @apply bg-sun-400 text-base text-sun-900 leading-loose font-sans;
 }
 
 .card {
@@ -54,7 +54,7 @@ h6 {
 }
 
 li > code {
-  @apply bg-sun-300 text-sun-900 dark:bg-dark-base-200 dark:text-dark-primary px-1 rounded;
+  @apply bg-sun-300 text-sun-900 px-1 rounded;
 }
 
 li > ul {
@@ -82,7 +82,7 @@ h6 {
 }
 
 .nav-author {
-  @apply flex items-center text-sun-800 dark:text-gray-200 hover:no-underline;
+  @apply flex items-center text-sun-800 hover:no-underline;
 }
 
 .nav-author img {
@@ -114,7 +114,7 @@ ol {
 }
 
 p > code {
-  @apply bg-sun-300 text-sun-900 dark:bg-dark-base-200 dark:text-dark-primary px-1 rounded;
+  @apply bg-sun-300 text-sun-900 px-1 rounded;
 }
 
 pre {
