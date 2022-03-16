@@ -6,20 +6,12 @@ path = "about"
 template = "about.html"
 +++
 
-## About Domain Name
-
-Although the domain name `seorang.dev` literally means `a dev` in Indonesian, and yes I'm interested in programming, but that doesn't mean this site is [guaranteed](https://twitter.com/iamdevloper/status/1323540957128728577) to be about career as developer or software development. I didn't even consider that when purchasing this domain.
-<br><br>
-I simply liked the uniqueness of the domain name since it cannot be mistaken with any other TLDs. This kind of combination is known as
-[domain hack](https://en.wikipedia.org/wiki/Domain_hack). Unlike common hacks that prioritizes shorter name at the expense of more awkward to type, this name is much more natural to type and easier to remember.
+## What is this?
+It's a personal site by [Hizzely](https://github.com/hizzely) that [may or may not be related](https://twitter.com/iamdevloper/status/1323540957128728577) to programming despite the domain name literally means `a dev` in Indonesian. I bought this domain name purely because I liked its uniqueness. 
 
 ## Site state
 
-As of March 2022, the site design finally taking shape.
-But as always, It's still pretty much experimental.
-I might make some changes or tweaks here and there or even scrap the design altogether.
-<br><br>
-In addition, I haven't updated the robots.txt and other search engine related things since the permalinks haven't finalized yet and I don't want search engines to index a broken link.
+I haven't updated the robots.txt and other search engine related things since the permalinks haven't finalized yet and I don't want search engines to index a broken link.
 So if you're not me and you stumbled upon this site, what brought you here? more importantly, how did you find this site?!?! jk, welcome internet strangers!
 
 ## Under the hood
