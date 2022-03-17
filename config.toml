@@ -16,3 +16,9 @@ highlight_theme = "zenburn"
 external_links_target_blank = true
 external_links_no_follow = true
 external_links_no_referrer = true
+
+[languages.id]
+generate_feed = true
+
+[languages.id.translations]
+description = "Sebuah blog personal oleh hizzely"
