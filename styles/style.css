@@ -65,16 +65,12 @@ li > ul {
   @apply py-12 text-center;
 }
 
-.md-content {
-  @apply text-justify;
-}
-
 .md-content h2,
 h3,
 h4,
 h5,
 h6 {
-  @apply py-1 border-b-2 border-sun-600 mb-4 first:mt-0 mt-8 font-semibold;
+  @apply py-1 first:mt-0 mt-6 font-semibold;
 }
 
 .md-content pre {
